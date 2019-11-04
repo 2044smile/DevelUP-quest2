@@ -1,5 +1,0 @@
-#!E:\0_Develup\Quest2\love_alarm\venv\Scripts\python.exe
-from django.core import management
-
-if __name__ == "__main__":
-    management.execute_from_command_line()

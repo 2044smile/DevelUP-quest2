@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title %}
+    ANNIVERSARY WRITING
+{% endblock %}
+{% block contact %}
+    <!-- Contact -->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Anniversary Writing</h2>
+                    <h3 class="section-subheading text-muted">사랑하는 사람의 기념일을 기록하세요, 기념일이 되면 문자와 메일을 보내드립니다!</h3>
+                </div>
+            </div>
+            <form action="" method="post">
+                {% csrf_token %}
+                {#                {{ form.as_p }}#}
+                {{ form.title }}
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" id="id_Anniversary_date" type="text"
+                                           placeholder="기념일 Datetime"
+                                           required=""
+                                           data-validation-required-message="Please enter your name."
+                                           nmae="Anniversary_date" maxlength="254">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="id_Anniversary_email" type="email"
+                                           placeholder="Your Email *"
+                                           required=""
+                                           data-validation-required-message="Please enter your email address."
+                                           name="Anniversary_email" maxlength="254">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="id_Anniversary_phone_0" type="text"
+                                           placeholder="Your Phone *"
+                                           required=""
+                                           data-validation-required-message="Please enter your phone number."
+                                           name="Anniversary_phone_0" size="13">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" id="id_title" placeholder="기념일 제목*"
+                                           required=""
+                                           data-validation-required-message="Please enter a message." name="title"
+                                           maxlength="100">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                        <textarea class="form-control" id="id_content" placeholder="기념일 내용*"
+                                                  required=""
+                                                  data-validation-required-message="Please enter a message."
+                                                  name="content" maxlength="500"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase"
+                                        type="submit">Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+{% endblock %}
