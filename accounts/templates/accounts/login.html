@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+    로그인
+{% endblock %}
+
+
+{% block content %}
+    <div style="margin-top: 50px; margin-bottom:50px">
+        <div class="container">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+
+                <div class="form-group">
+                    <label for="remember-me" class="text-info"><span>Remember me</span> <span><input
+                            id="remember-me"
+                            name="remember-me"
+                            type="checkbox"></span></label><br>
+                    <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -8,3 +8,7 @@ class UserCreateView(CreateView):
     form_class = LoverUserCreationForm
     template_name = 'accounts/signup.html'
     success_url = reverse_lazy('index')
+
+
+def login(request):
+    return render(request, 'accounts/login.html')
