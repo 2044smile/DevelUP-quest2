@@ -28,7 +28,13 @@ class AccountChangeForm(UserChangeForm):
 class LoginForm(forms.ModelForm):
     class Meta:
         model = LoveUser
-        fields = ['username','password']
+        fields = ['username', 'password']
+        labels = {
+            'password': '비밀번호',
+        }
+        widgets = {
+            'password': forms.PasswordInput(),
+        }
         help_texts = {
             'username': '</br>150자 이하 문자, 숫자 그리고 @/./+/-/_만 가능합니다.'
         }

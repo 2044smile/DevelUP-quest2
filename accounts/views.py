@@ -2,13 +2,13 @@ from django.shortcuts import render, redirect
 from .forms import LoverUserCreationForm, LoginForm
 from django.views.generic import CreateView
 from django.urls import reverse_lazy
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login as dj_login, authenticate
 
 
 class UserCreateView(CreateView): # 회원가입
     form_class = LoverUserCreationForm
     template_name = 'accounts/signup.html'
-    success_url = reverse_lazy('index')
+    success_url = reverse_lazy('login')
 
 
 def login(request): # 로그인
@@ -18,7 +18,7 @@ def login(request): # 로그인
         password = request.POST['password']
         user = authenticate(username=username, password=password)
         if user is not None:
-            login(request, user)
+            dj_login(request, user)
             return redirect('index')
         else:
             return render(request, 'accounts/login.html', {
