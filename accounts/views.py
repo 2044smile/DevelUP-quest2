@@ -7,4 +7,4 @@ from django.urls import reverse_lazy
 class UserCreateView(CreateView):
     form_class = LoverUserCreationForm
     template_name = 'accounts/signup.html'
-    success_url = reverse_lazy('/')
+    success_url = reverse_lazy('index')

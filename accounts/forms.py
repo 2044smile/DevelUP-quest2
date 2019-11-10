@@ -9,7 +9,7 @@ class LoverUserCreationForm(UserCreationForm):
         fields = ['username', 'email', 'password1', 'password2']
 
     def save(self, commit=True):
-        user = super(LoverUserCreationForm, self).save(commit=False) # 본인의 부모를 호출해서 저장하겠다.
+        user = super(LoverUserCreationForm, self).save(commit=True) # 본인의 부모를 호출해서 저장하겠다.
         if commit:
             user.save()
         return user
