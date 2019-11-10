@@ -54,7 +54,7 @@
                             <a class="nav-link" href="#">{{ user.username }}님 환영합니다.</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Logout</a>
+                            <a class="nav-link" href="{% url 'logout' %}" onclick="alert('{{ user.username }}님 로그아웃 되었습니다.')">Logout</a>
                         </li>
                     {% else %}
                         <li class="nav-item">

@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="421ac596-f178-46c8-af23-3f5caf507a14" name="Default Changelist" comment="ordering -Anniversary_date">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -150,7 +140,7 @@
       <workItem from="1572848216897" duration="11543000" />
       <workItem from="1573283119836" duration="300000" />
       <workItem from="1573354609112" duration="10772000" />
-      <workItem from="1573376389683" duration="2890000" />
+      <workItem from="1573376389683" duration="3471000" />
     </task>
     <task id="LOCAL-00001" summary="edit create">
       <created>1572853855118</created>
