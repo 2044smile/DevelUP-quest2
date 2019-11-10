@@ -8,3 +8,4 @@ class AccountManager(UserManager):
 
 class LoveUser(AbstractUser):
     objects = AccountManager()
+    password2 = models.CharField(max_length=128, null=False)

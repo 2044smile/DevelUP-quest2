@@ -8,13 +8,8 @@ class LoverUserCreationForm(UserCreationForm):
         model = LoveUser
         fields = ['username', 'email', 'password1', 'password2']
         help_texts = {
-            'username': '</br>150 자 이하 문자, 숫자 및 @ /. / + /-/ _ 만 사용가능',
+            'username': '</br>150자 이하 문자, 숫자 그리고 @/./+/-/_만 가능합니다.',
             'email': '</br>Ex) example@example.com',
-            'password': 'password1',
-            '_password': 'password1',
-            'password1': 'password1',
-            'password2': 'password1',
-            'check_password': 'password2',
         }
 
     def save(self, commit=True):
@@ -28,3 +23,12 @@ class AccountChangeForm(UserChangeForm):
     class Meta:
         model = LoveUser
         fields = UserChangeForm.Meta.fields
+
+
+class LoginForm(forms.ModelForm):
+    class Meta:
+        model = LoveUser
+        fields = ['username','password']
+        help_texts = {
+            'username': '</br>150자 이하 문자, 숫자 그리고 @/./+/-/_만 가능합니다.'
+        }
