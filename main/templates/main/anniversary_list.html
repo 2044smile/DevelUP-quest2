@@ -1,8 +1,8 @@
-{% extends 'base.html '%}
+{% extends 'base.html' %}
 {% block title %}
     ANNIVERSARY LIST
 {% endblock %}
-{% block contact %}
+{% block content %}
     <!-- ANNIVERSARY LISt -->
     <section class="page-section" id="services">
         <div class="container">
@@ -12,33 +12,19 @@
                     <h3 class="section-subheading text-muted">작성한 기념일 목록을 볼 수 있습니다.</h3>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4">
+            {% for list in object_list %}
+                <div class="row text-center">
+                    <div class="col">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-grin-hearts fa-stack-1x fa-inverse"></i>
           </span>
-                    <h4 class="service-heading">엄마 생신</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 class="service-heading">{{ list.title }}</h4>
+                        <p class="text-muted">{{ list.content }}</p>
+                        <p class="text-muted">{{ list.Anniversary_date }}</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-          </span>
-                    <h4 class="service-heading">아빠 생신</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-grin-hearts fa-stack-1x fa-inverse"></i>
-          </span>
-                    <h4 class="service-heading">형 생일</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </section>
 {% endblock %}
