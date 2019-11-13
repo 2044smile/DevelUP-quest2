@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="421ac596-f178-46c8-af23-3f5caf507a14" name="Default Changelist" comment="ordering -Anniversary_date">
+      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/registration_verification.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/secret.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +83,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="E:\0_Develup\Quest2\love_alarm\static\css" />
       <recent name="E:\0_Develup\Quest2\love_alarm\main\templates\main" />
       <recent name="E:\0_Develup\Quest2\love_alarm\static" />
@@ -140,7 +145,10 @@
       <workItem from="1572848216897" duration="11543000" />
       <workItem from="1573283119836" duration="300000" />
       <workItem from="1573354609112" duration="10772000" />
-      <workItem from="1573376389683" duration="3471000" />
+      <workItem from="1573376389683" duration="3713000" />
+      <workItem from="1573433567790" duration="21000" />
+      <workItem from="1573549246181" duration="1268000" />
+      <workItem from="1573628226867" duration="2279000" />
     </task>
     <task id="LOCAL-00001" summary="edit create">
       <created>1572853855118</created>

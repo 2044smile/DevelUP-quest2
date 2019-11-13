@@ -4,6 +4,7 @@ from main.models import AnniversaryPosts
 
 
 def index(request):
+
     return render(request, 'main/index.html')
 
 
